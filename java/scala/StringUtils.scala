@@ -1,8 +1,8 @@
 package sparktf
 
-object StringUtil {
+object StringUtils {
 
-   def StringToMap(rawString) {
+   def StringToMap(rawString: String) {
        rawString.substring(1, rawString.length - 1)
                 .split(",")
                 .map(_.split(":"))
